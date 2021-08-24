@@ -1,0 +1,53 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: linear-gradient( #8F82A1 ,#5A4F6A );
+  width: 100vw;
+  height: 100vh;
+}
+
+#h1{
+  background-color: red;
+  text-align: center;
+
+  margin: 3rem;
+}
+
+#border {
+  margin: 0 auto;
+  background-color: #E4E1E7;
+  width: 70%;
+  height: 50%;
+  padding: 5rem;
+
+  border-radius: 2px;
+  margin-top: 9rem;
+
+  box-shadow: 5px 10px 35px 8px rgb(70, 57, 57) ;
+}
+
+#clockDisplay{
+  display: flex;
+  width: 100%;
+  height: 100%;
+
+  justify-content: center;
+  align-items: center;
+
+  background-color: #5A4F6A;
+  color: white;
+  
+  
+  font-family:  'Open Sans Condensed' sans-serif;
+  font-weight: 100; 
+  font-size: 3rem;
+  letter-spacing: 0.75rem;
+  
+  
+  box-shadow: 0 8px 15px rgb(70, 57, 57) ;
+  border-radius: 2px;
+}
