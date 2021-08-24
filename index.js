@@ -1,24 +1,24 @@
-function showTime() {
-  var date = new Date(); //pegando a data compvara
+function showTime(){
+  var date = new Date();
+  var h = date.getHours(); 
+  var m = date.getMinutes();
+  var s = date.getSeconds();
 
-  var hours = date.getHours() //pegando horas
-  var minutes = date.getMinutes() //pegando minutos
-  var seconds = date.getSeconds() //pegando segundos
-
-  //transformando 0 em 12hrs
-  if (hours == 0) {
-    hours = 12;
+  if(h==0){
+      h=12;
   }
 
 
-  hours = (hours < 10) ? "0" + hours : hours
-  minutes = (minutes < 10) ? "0" + minutes : minutes
-  seconds = (seconds < 10) ? "0" + seconds : seconds
 
-  let time = `${hours}:${minutes}:${seconds} `
-  document.getElementById('clockDisplay').textContent = time
+  h = (h<10) ? "0" + h : h;
+  m = (m<10) ? "0" + m : m;
+  s = (s<10) ? "0" + s : s;
+  
+  var time = h + ":" + m + ":" + s  ;
+  document.getElementById("clockDisplay").innerHTML = time;
+  document.getElementById("clockDisplay").textContent = time;
 
-  setInterval(showTime, 1000)
+  setTimeout(showTime, 1000);
 }
-showTime()
 
+showTime();
